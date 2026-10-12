@@ -1,0 +1,112 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#120d20">
+  <title>SS Connect | Love Has No Borders</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #100c19;
+      color: #fff;
+    }
+    header {
+      padding: 18px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #332640;
+    }
+    .logo { font-size: 24px; font-weight: bold; color: #ff66b2; }
+    .logo span { color: white; }
+    .tag { color: #d8b5d1; font-size: 12px; }
+    .hero {
+      text-align: center;
+      padding: 65px 20px 45px;
+      background: radial-gradient(ellipse at top, #51224f, #100c19 70%);
+    }
+    .pill {
+      display: inline-block;
+      padding: 8px 14px;
+      border: 1px solid #a84b8b;
+      border-radius: 30px;
+      color: #ffc3e2;
+      font-size: 13px;
+    }
+    h1 { font-size: clamp(38px, 8vw, 62px); margin: 22px 0 12px; }
+    h1 span { color: #ff66b2; }
+    .hero p { max-width: 540px; margin: 0 auto; line-height: 1.7; color: #ded4e6; }
+    .actions { margin-top: 28px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    button {
+      border: 0; padding: 14px 22px; border-radius: 10px;
+      font-weight: bold; font-size: 15px; cursor: pointer;
+    }
+    .primary { background: #ff66b2; color: #230e20; }
+    .secondary { background: transparent; color: white; border: 1px solid #a88da9; }
+    main { max-width: 900px; margin: auto; padding: 25px 20px 55px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 15px; }
+    .card { background: #1e172a; border: 1px solid #382844; border-radius: 16px; padding: 22px; }
+    .card .emoji { font-size: 30px; }
+    .card p { color: #cfc3d8; line-height: 1.6; font-size: 14px; }
+    .section-title { text-align: center; margin: 25px 0; }
+    footer { text-align: center; padding: 25px; border-top: 1px solid #332640; color: #cfc3d8; font-size: 13px; line-height: 1.8; }
+    #notice { color: #ffbfe0; margin-top: 18px; }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <div class="logo">SS <span>Connect ❤️</span></div>
+      <div class="tag">AN SS NETWORK PLATFORM</div>
+    </div>
+    <div>🌍 Worldwide</div>
+  </header>  <section class="hero">
+    <div class="pill">18+ · Everyone deserves connection</div>
+    <h1>Love Has <span>No Borders.</span></h1>
+    <p>Meet people beyond borders, cultures and labels. Discover a welcoming community for dating, serious relationships and friendship.</p>
+    <div class="actions">
+      <button class="primary" onclick="showNotice()">Join SS Connect</button>
+      <button class="secondary" onclick="showNotice()">Explore the community</button>
+    </div>
+    <p id="notice" role="status"></p>
+  </section>  <main>
+    <h2 class="section-title">Your connection. Your journey.</h2>
+    <div class="cards">
+      <article class="card">
+        <div class="emoji">💗</div>
+        <h3>Serious Relationships</h3>
+        <p>Make space for genuine connections and long-term love.</p>
+      </article>
+      <article class="card">
+        <div class="emoji">🌈</div>
+        <h3>Inclusive Community</h3>
+        <p>A welcoming vision for straight and LGBTQ+ adults.</p>
+      </article>
+      <article class="card">
+        <div class="emoji">🌍</div>
+        <h3>Meet Worldwide</h3>
+        <p>Discover people across Africa, Asia and the wider world.</p>
+      </article>
+      <article class="card">
+        <div class="emoji">🤝</div>
+        <h3>Real Friendship</h3>
+        <p>Build friendships and meaningful connections at your pace.</p>
+      </article>
+    </div>
+    <h2 class="section-title">Built on respect and safety</h2>
+    <p style="text-align:center;color:#d8cddd;line-height:1.8">
+      Adults aged 18 and above · Respect · Privacy · Consent
+    </p>
+  </main>  <footer>
+    <strong>SS Connect</strong> — Love Has No Borders.<br>
+    An SS Network platform · Currently under development.<br>
+    This preview does not yet provide real accounts, matches or chat.
+  </footer>  <script>
+    function showNotice() {
+      document.getElementById('notice').textContent =
+        'Thanks for your interest! Account registration is coming soon.';
+    }
+  </script></body>
+</html>
